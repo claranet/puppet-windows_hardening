@@ -19,5 +19,6 @@ class windows_hardening {
   include windows_hardening::powershell
   include windows_hardening::privacy
   include windows_hardening::rdp_config
+  include windows_hardening::security_options
   include windows_hardening::user_rights
 }

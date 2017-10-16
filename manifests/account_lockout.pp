@@ -25,11 +25,4 @@ class windows_hardening::account_lockout {
     policy_value => '15',
   }
 
-  # Windows Remote Desktop Configured to Only Allow System Administrators Access
-  # windows_baseline: windows-account-100
-  local_security_policy { 'Allow log on through Remote Desktop Services':
-    ensure       => present,
-    policy_value => 'BUILTIN_ADMINISTRATORS',
-  }
-
 }
